@@ -1,0 +1,57 @@
+.container {
+  height: 100vh;
+  /*width: 100vw;*/
+  /*display: inline-block;*/
+  overflow: hidden;
+  /*margin: auto;*/
+}
+
+.row {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.oddRow {
+  margin-top: -17px;
+}
+
+.evenRow {
+  margin-left: 25px;
+  margin-top: -17px;
+}
+
+.firstRow {
+  margin-top: 0px;
+}
+
+.hexagon {
+  background-color: #64C7CC;
+  width: 50px;
+  height: 28.87px;
+  position: relative;
+  margin: 14.43px 1px;
+  /*margin-bottom: 69px;*/
+  display: inline-block;
+  -webkit-transition: 0.4s ease;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  -webkit-transition: 0.4s ease;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 14.43px solid #64C7CC
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 14.43px solid #64C7CC
+}
